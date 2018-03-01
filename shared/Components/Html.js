@@ -5,10 +5,10 @@ const Html = props => {
         <html>
         <head>
             <title>{props.title}</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
         </head>
         <body>
             <div id="app">{props.children}</div>
-            <script id="initial-data" type="text/plain" data-json={props.initialData}></script>
             <script src="/static/bundle.js"></script>
         </body>
         </html>
